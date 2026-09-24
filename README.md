@@ -1,4 +1,5 @@
 # 🎓 STUDYSENSE
+# Student Final Marks Prediction Application
 A desktop application built with Python and Tkinter that estimates student final marks based on academic and engagement metrics. 
 
 Instead of relying on hardcoded assumptions, the app dynamically reads training data on-the-fly, derives mathematical relationships directly from the uploaded dataset, and adapts its prediction logic to fit the data provided.
@@ -36,3 +37,21 @@ Ensure you have Latest Version of Python installed along with the required depen
 
 ```bash
 pip install pandas numpy scikit-learn openpyxl
+```
+## Setup & Execution Instructions
+1. Install required dependencies:
+   pip install pandas numpy scikit-learn openpyxl
+2. Run the application:
+   python studysense.py
+
+### Dataset Information
+- Dataset URL / Link: [Insert your Kaggle / GitHub / Google Drive dataset link here]
+- File Format: Excel (.xlsx) containing columns for Attendance, Previous Marks, Assignment Marks, Study Hours, and Final Marks.
+
+### Methodology & Approach
+- Data Preprocessing: Implemented flexible alias matching to automatically map dataset columns to key features. Handled missing numeric values using median imputation via Scikit-Learn's SimpleImputer.
+- Modeling & Analytics:
+  1. Linear Regression: Used to compute feature correlations, intercept, and variable coefficients to derive a readable dynamic equation for user visibility.
+  2. Random Forest Regressor: Applied an ensemble model (100 estimators) to capture non-linear relationships across feature combinations.
+  3. Hybrid Rule Override: Incorporated domain-specific logic to prevent excessive attendance penalties when prior academic performance is strong.
+  4. Active Learning Feedback: Appends verified user predictions back into the active dataset to update model parameters dynamically over time.
