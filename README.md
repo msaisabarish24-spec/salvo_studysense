@@ -45,7 +45,7 @@ pip install pandas numpy scikit-learn openpyxl
    python studysense.py
 
 ### Dataset Information
-- Dataset URL / Link: [Insert your Kaggle / GitHub / Google Drive dataset link here]
+- Dataset URL / Link: [(https://github.com/msaisabarish24-spec/salvo_studysense/raw/refs/heads/main/raw_data.xlsx)]
 - File Format: Excel (.xlsx) containing columns for Attendance, Previous Marks, Assignment Marks, Study Hours, and Final Marks.
 
 ### Methodology & Approach
